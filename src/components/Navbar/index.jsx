@@ -1,16 +1,20 @@
 import React from 'react'
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
-function Navbar() {
+function NavBar() {
     return (
-        <Container fluid className="navbar-container">
-            <Row>
-                <Col xs={12} sm={12} md={6} lg={6}>left header</Col>
-                <Col xs={12} sm={12} md={6} lg={6}>right header</Col>
-            </Row>
+        <Navbar bg="light" variant="light">
+        <Container>
+        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        </Nav>
         </Container>
+      </Navbar>
     )
 }
 
-export default Navbar
+export default NavBar
