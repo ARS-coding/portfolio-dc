@@ -1,9 +1,10 @@
 @import "../../style/variables";
 
 .navbar {
-    padding: 0 !important;
     background-color: $navbar-purple;
-
+    padding: 0 !important;
+    height: 84px;
+    
     & > .container {
         & > .container {
             padding: 27px 0 !important;
