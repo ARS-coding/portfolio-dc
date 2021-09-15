@@ -20,8 +20,11 @@
                 & > nav {
                     a {
                         color: white !important;
-                        @media screen and (max-width: 400px) {
-                            font-size: 13px;
+                        @media screen and  (max-width: $lg - 1px) {
+                            font-size: 12px;
+                        }
+                        @media screen and (min-width: $lg) {
+                            font-size: 15px;
                         }
                     }
                 }
@@ -33,6 +36,9 @@
 
                 @media screen and (max-width: $sm - 1px) {
                     margin: auto 0;
+                }
+                @media screen and (min-width: $lg) {
+                    font-size: 20px;
                 }
             }
         }
