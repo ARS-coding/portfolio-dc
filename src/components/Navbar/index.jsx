@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 
 import { ReactComponent as GitHubSVG } from "../../images/github.svg";
 import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
