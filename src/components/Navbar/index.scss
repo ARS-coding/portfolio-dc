@@ -1,32 +1,66 @@
 @import "../../style/variables";
 
 .navbar {
+    padding: 0 !important;
     background-color: $navbar-purple;
 
     & > .container {
-        justify-content: unset !important;
+        & > .container {
+            padding: 27px 0 !important;
+            margin: 0;
 
-        .navbar-collapse {
             @media screen and (min-width: $lg) {
-                flex-basis: example !important; // added to remove flex-basis from navbar-collapse
+                width: 66%;
             }
             @media screen and (max-width: $lg - 1px) {
-                flex-basis: auto;
+                width: 100%;
+            }
+
+            & > div {
+                & > nav {
+                    a {
+                        color: white !important;
+                        @media screen and (max-width: 400px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            & > a {
+                color: $light-blue;
+                font-weight: bold;
+
+                @media screen and (max-width: $sm - 1px) {
+                    margin: auto 0;
+                }
             }
         }
 
-        .social-header {
-            @media screen and (min-width: $lg) {
-                width: 37%;
-                position: relative;
-                left: 5%;
+        & > .navbar-collapse {
+            a {
+                color: white !important;
             }
+        }
 
+        & > .social-header {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 34%;
+            background-color: white;
+    
             svg {
                 width: 30px;
                 height: 30px;
                 fill: black;
             }
+    
+            & > div {
+                margin: auto 0;
+            }
         }
+    
     }
 }

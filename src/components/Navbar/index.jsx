@@ -10,55 +10,27 @@ import "./index.scss";
 
 function NavBar() {
     return (
-      <Navbar expand="sm">
+      <Navbar expand="xs" className="px-3 px-sm-0">
         <Container>
-          <Navbar.Brand href="#home">Ali Rıza Şahin</Navbar.Brand>
-          
-          <div className="ms-auto ms-sm-auto ms-md-auto ms-lg-0 me-lg-auto">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-0">
-              <Nav>
-                <Nav.Link href="#my-work">My Work</Nav.Link>
-                <Nav.Link href="#my-skills">My Skills</Nav.Link>
-                <Nav.Link href="#hire-me">Hire Me</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </div>
+          <Container className="d-flex">
+            <a href="#home">Ali Rıza Şahin</a>
+            
+            <div className="ms-auto me-0 me-sm-3">
+              <nav>
+                <a href="#my-work">My Work</a>
+                <a href="#my-skills" className="mx-2 mx-sm-3">My Skills</a>
+                <a href="#hire-me">Hire Me</a>
+              </nav>
+            </div>
+          </Container>
 
-          <div className="social-header d-lg-flex justify-content-lg-center d-none d-sm-none d-md-none d-lg-block w-33">
+          <div className="social-header d-lg-flex justify-content-lg-center d-none d-sm-none d-md-none d-lg-block w-33 d-flex justify-content-center align-items-center">
             <a href="https://github.com/ARS-coding"><GitHubSVG /></a>
             <a href="https://www.linkedin.com/in/ars-coding/" className="mx-lg-5"><LinkedInSVG /></a>
             <a href="https://twitter.com/ARS_coding"><TwitterSVG /></a>
           </div>
         </Container>
       </Navbar>
-
-
-
-      // <div className="nav-container">
-      //   <header>
-      //     <a href="#">Ali Rıza Şahin</a>
-
-      //     <nav>
-      //       <ul>
-      //         <li>
-      //           <a href="#my-work">My Work</a>
-      //         </li>
-      //         <li>
-      //           <a href="#my-skills">My Skills</a>
-      //         </li>
-      //         <li>
-      //           <a href="#hire-me">Hire Me</a>
-      //         </li>
-      //       </ul>
-      //     </nav>
-      //   </header>
-        // <div className="social-header d-flex justify-content-center">
-        //   <a href="https://github.com/ARS-coding"><GitHubSVG /></a>
-        //   <a href="https://www.linkedin.com/in/ars-coding/"><LinkedInSVG /></a>
-        //   <a href="https://twitter.com/ARS_coding"><TwitterSVG /></a>
-        // </div>
-      // </div>
     )
 }
 
