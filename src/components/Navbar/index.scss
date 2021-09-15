@@ -1,18 +1,32 @@
-.nav-container {
-    header {
-        li {
-            list-style-type: none;
+@import "../../style/variables";
 
-            a {
-                text-decoration: none;
+.navbar {
+    background-color: $navbar-purple;
+
+    & > .container {
+        justify-content: unset !important;
+
+        .navbar-collapse {
+            @media screen and (min-width: $lg) {
+                flex-basis: example !important; // added to remove flex-basis from navbar-collapse
+            }
+            @media screen and (max-width: $lg - 1px) {
+                flex-basis: auto;
             }
         }
-    }
 
-    div {
-        svg {
-            width: 40px;
-            height: 40px;
+        .social-header {
+            @media screen and (min-width: $lg) {
+                width: 37%;
+                position: relative;
+                left: 5%;
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: black;
+            }
         }
     }
 }
