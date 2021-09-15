@@ -2,7 +2,7 @@
 
 .hero-container {
     color: white;
-    height: calc(100vh - 78px);
+    height: calc(100vh - 84px);
     
     @media screen and (max-width: $lg - 1px) {
         background-color: $hero-purple;
@@ -58,7 +58,7 @@
 
                 p {
                     margin-right: 30px;
-                    
+
                     span {
                         font-style: italic;
                     }
