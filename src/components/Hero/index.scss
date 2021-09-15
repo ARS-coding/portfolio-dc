@@ -1,0 +1,86 @@
+@import "../../style/variables";
+
+.hero-container {
+    color: white;
+    height: calc(100vh - 78px);
+    
+    @media screen and (max-width: $lg - 1px) {
+        background-color: $hero-purple;
+    }    
+    
+    .hero-content-container {
+        position: relative;
+
+
+        @media screen and (max-width: $lg - 1px) {
+            max-width: unset;
+            margin: 0;
+        }        
+        @media screen and (min-width: $lg) {
+            background-color: $hero-purple;
+            width: 66%;
+        }
+
+        & > div {
+            & > h1 {
+                font-weight: bold;
+
+                @media screen and (min-width: $md) and (max-width: $lg - 1px) {
+                    font-size: 60px;
+                }
+                @media screen and (min-width: $sm) and (max-width: $md - 1px) {
+                    font-size: 57.5px;
+                }
+                @media screen and (min-width: 414px) and (max-width: $sm - 1px) {
+                    font-size: 40px;
+                }
+
+                span {
+                    @media screen and (min-width: $lg) {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            & > div.meet {
+                margin: 20px 0;
+                display: inline-block;
+                position: relative;
+                left: 23px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 4px;
+                    left: -24px;
+                }
+
+                p {
+                    margin-right: 30px;
+                    
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            svg {
+                display: block;
+
+                @media screen and (max-width: 413px) {
+                    scale: 0.7;
+                }
+            }
+        }
+
+        & > svg {
+            position: absolute;
+            right: -200px;
+            
+            @media screen and (max-width: $lg - 1px) {
+                display: none;
+            }
+        }
+    }
+}
