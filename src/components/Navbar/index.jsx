@@ -2,18 +2,38 @@ import React from 'react'
 
 import { Container, Navbar, Nav } from "react-bootstrap";
 
+import { ReactComponent as GitHubSVG } from "../../images/github.svg";
+import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
+import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
+
+import "./index.scss";
+
 function NavBar() {
     return (
-        <Navbar bg="light" variant="light">
-        <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
-        </Container>
-      </Navbar>
+      <div className="nav-container">
+        <header>
+          <a href="#">Ali Rıza Şahin</a>
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#my-work">My Work</a>
+              </li>
+              <li>
+                <a href="#my-skills">My Skills</a>
+              </li>
+              <li>
+                <a href="#hire-me">Hire Me</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div className="social-header d-flex justify-content-center">
+          <a href="https://github.com/ARS-coding"><GitHubSVG /></a>
+          <a href="https://www.linkedin.com/in/ars-coding/"><LinkedInSVG /></a>
+          <a href="https://twitter.com/ARS_coding"><TwitterSVG /></a>
+        </div>
+      </div>
     )
 }
 

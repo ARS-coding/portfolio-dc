@@ -1,0 +1,18 @@
+.nav-container {
+    header {
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    div {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
