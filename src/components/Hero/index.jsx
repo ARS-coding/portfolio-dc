@@ -16,12 +16,12 @@ function Hero() {
         const timeline = gsap.timeline();
         timeline.from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" });
         timeline.from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
-
         
-        const textTl = gsap.timeline({ yoyo: true, repeat: -1, delay: 2.7 });
-        textTl.to(".hand", { duration: 1, y: -15, ease: "bounce" })
-        textTl.from(".hand", { duration: 1, y: -15, ease: "bounce" })
-        // textTl.from(".heyoo", { duration: 1, x: 30 })
+        gsap.fromTo(".meet-text, .hand",
+            { duration: 1.5, y: -20, delay: 2.7 },
+            { duration: 1.2, opacity: 1, y: 0, delay: 2.7 }
+        );
+
     }, []);
 
     const text = useRef();
@@ -33,7 +33,7 @@ function Hero() {
                     <h1 className="mx-auto"><span>Beautifully</span> Crafted<br/>Web Experiences</h1>
                     <div className="meet mx-auto">
                         <img src={PointDownIMG} className="hand" alt="A hand pointing down" />
-                        <p ref={text} onClick={() => gsap.pause()} className="heyoo"><span>Meet</span> Ali Rıza Şahin</p>
+                        <p ref={text} className="meet-text"><span>Meet</span> Ali Rıza Şahin</p>
                     </div>
                     <ScrollIconSVG className="mx-auto" />
                 </div>
