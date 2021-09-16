@@ -1,0 +1,11 @@
+@import "../../style/variables";
+
+.skills-section {
+    .skills-content-container {
+        .skills-content-row {
+            & > div {
+                padding: 0 !important;
+            }
+        }
+    }
+}
