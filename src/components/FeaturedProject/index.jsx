@@ -15,7 +15,7 @@ function FeaturedProject() {
                         <span>Featured Project</span>
                         <br/>
                         <a href="https://lovethyneighbor.netlify.app/" target="_blank" rel="noreferrer">Love Thy Neighbor</a>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, necessitatibus, fuga laudantium tempore veniam recusandae debitis qui error iusto dolor nam animi ea voluptas sed nesciunt labore incidunt. Ea, reiciendis.</p>
+                        <p><span>Love Thy Neighbor</span> helps people to find neighbors nearby and invite them to an event so they could build a dynamic community that uplifts each other.</p>
                     </Col>
                     <Col>
                         <img src={LTNMockupImage} alt="Love Thy Neighbor mockup" />
