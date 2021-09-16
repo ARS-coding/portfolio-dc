@@ -2,14 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
 .featured-project-section {
-    position: relative;
-    bottom: 30px;
+    overflow-x: hidden;
     z-index: 1;
+
+    @media screen and (min-width: $lg) {
+        position: relative;
+        bottom: 30px;
+    }
     
     .featured-project-content-container {
         .featured-project-content-row {
             & > div {
                 padding: 0;
+                
+                @media screen and (max-width: $lg - 1px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
 
             div:first-child {
@@ -31,15 +41,38 @@
                     font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
                     font-size: 22px;
                     line-height: 25px;
-                    margin-right: 90px;
+
+                    @media screen and (min-width: $lg) {
+                        margin-right: 90px;
+                    }
+                    @media screen and (min-width: $sm) and (max-width: $lg - 1px) {
+                        width: 67%;
+                    }
+                    @media screen and (max-width: $sm - 1px) {
+                        margin: 0 20px 16px 20px;
+                    }
+                    @media screen and (max-width: 378px) {
+                        font-size: 15px;
+                    }
                 }
             }
 
             div:last-child {
-                img {
-                    width: 100%;
-                    border-radius: 25px;
-                    filter: brightness(80%);
+                a {
+                    display: inline-block;
+                    
+                    @media screen and (max-width: $lg - 1px) {
+                        width: 67%;
+                    }
+                    @media screen and (max-width: $sm - 1px) {
+                        width: 80%;
+                    }
+
+                    img {
+                        border-radius: 25px;
+                        filter: brightness(80%);
+                        max-height: 330px;
+                    }
                 }
             }
         }
