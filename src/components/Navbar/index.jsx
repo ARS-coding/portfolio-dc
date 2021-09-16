@@ -25,9 +25,9 @@ function NavBar() {
           </Container>
 
           <div className="social-header d-lg-flex justify-content-lg-center d-none d-sm-none d-md-none d-lg-block w-33 d-flex justify-content-center align-items-center">
-            <a href="https://github.com/ARS-coding"><GitHubSVG /></a>
-            <a href="https://www.linkedin.com/in/ars-coding/" className="mx-lg-5"><LinkedInSVG /></a>
-            <a href="https://twitter.com/ARS_coding"><TwitterSVG /></a>
+            <a href="https://github.com/ARS-coding" target="_blank" rel="noreferrer"><GitHubSVG /></a>
+            <a href="https://www.linkedin.com/in/ars-coding/" target="_blank" rel="noreferrer" className="mx-lg-5"><LinkedInSVG /></a>
+            <a href="https://twitter.com/ARS_coding" target="_blank" rel="noreferrer"><TwitterSVG /></a>
           </div>
         </Container>
       </Navbar>
