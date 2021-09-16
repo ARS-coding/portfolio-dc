@@ -25,14 +25,20 @@
             & > h1 {
                 font-weight: bold;
 
-                @media screen and (min-width: $md) and (max-width: $lg - 1px) {
-                    font-size: 60px;
+                @media screen and (min-width: 414px) and (max-width: $sm - 1px) {
+                    font-size: 40px;
                 }
                 @media screen and (min-width: $sm) and (max-width: $md - 1px) {
                     font-size: 57.5px;
                 }
-                @media screen and (min-width: 414px) and (max-width: $sm - 1px) {
-                    font-size: 40px;
+                @media screen and (min-width: $md) and (max-width: $lg - 1px) {
+                    font-size: 60px;
+                }
+                @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+                    font-size: 45px;
+                }
+                @media screen and (min-width: $xl) {
+                    font-size: 55px;
                 }
 
                 span {
