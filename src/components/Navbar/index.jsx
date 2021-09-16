@@ -5,6 +5,8 @@ import { Container, Navbar } from "react-bootstrap";
 import { ReactComponent as GitHubSVG } from "../../images/github.svg";
 import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
 import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
+import { ReactComponent as FullName16 } from "../../images/full-name-16.svg";
+import { ReactComponent as FullName20 } from "../../images/full-name-20.svg";
 
 import "./index.scss";
 
@@ -13,7 +15,9 @@ function NavBar() {
       <Navbar expand="xs" className="px-3 px-sm-0">
         <Container>
           <Container className="d-flex">
-            <a href="#home">Ali Rıza Şahin</a>
+            <a href="#home">
+              {window.innerWidth > 993 ? <FullName20 /> : <FullName16 />}
+            </a>
             
             <div className="ms-auto me-0 me-sm-3">
               <nav>
