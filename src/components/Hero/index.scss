@@ -2,7 +2,7 @@
 
 .hero-container {
     color: white;
-    height: calc(100vh - 84px);
+    height: calc(100vh - 64px);
     
     @media screen and (max-width: $lg - 1px) {
         background-color: $hero-purple;
