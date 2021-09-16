@@ -1,8 +1,8 @@
 @import "../../style/variables";
 
-.hero-container {
+.hero-section {
     color: white;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 24px);
     
     @media screen and (max-width: $lg - 1px) {
         background-color: $hero-purple;
