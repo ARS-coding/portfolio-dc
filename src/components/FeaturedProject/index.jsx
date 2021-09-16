@@ -34,23 +34,23 @@ function FeaturedProject() {
     }, []);
 
     return (
-        <Container fluid className="featured-project-section">
+        <section className="featured-project-section container-fluid mt-4 mt-sm-4 mt-md-4 mt-lg-0">
             <Container className="featured-project-content-container">
                 <Row className="featured-project-content-row d-flex justify-content-center align-items-center">
-                    <Col className="column-left">
+                    <Col className="column-left" xs={12} sm={12} md={12} lg={6}>
                         <span>Featured Project</span>
                         <br/>
                         <a href="https://lovethyneighbor.netlify.app/" target="_blank" rel="noreferrer">Love Thy Neighbor</a>
-                        <p><span>Love Thy Neighbor</span> helps people to find neighbors nearby and invite them to an event so they could build a dynamic community that uplifts each other.</p>
+                        <p className="text-center text-sm-center text-md-center text-lg-start"><span>Love Thy Neighbor</span> helps people to find neighbors nearby and invite them to an event so they could build a dynamic community that uplifts each other.</p>
                     </Col>
-                    <Col className="column-right">
+                    <Col className="column-right" xs={12} sm={12} md={12} lg={6}>
                         <a href="https://lovethyneighbor.netlify.app/" target="_blank" rel="noreferrer">
-                            <img src={LTNMockupImage} alt="Love Thy Neighbor mockup" />
+                            <img src={LTNMockupImage} className="img-fluid" alt="Love Thy Neighbor mockup" />
                         </a>
                     </Col>
                 </Row>
             </Container>
-        </Container>
+        </section>
     )
 }
 
