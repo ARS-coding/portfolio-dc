@@ -15,12 +15,13 @@ function Hero() {
     useEffect(() => {
         if(window.innerWidth >= 992) {
             const timeline = gsap.timeline();
-            timeline.from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" });
-            timeline.from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
+            timeline
+            .from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" })
+            .from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
             
             gsap.fromTo(".meet-text, .hand",
-                { duration: 1.5, y: -20, delay: 2.7 },
-                { duration: 1.2, opacity: 1, y: 0, delay: 2.7 }
+                { duration: 1.5, y: -20, delay: 1.5 },
+                { duration: 1.2, opacity: 1, y: 0, delay: 1.5 }
             );
         } else {
             gsap.fromTo(".meet-text, .hand",
@@ -28,7 +29,6 @@ function Hero() {
             { duration: 1.2, opacity: 1, y: 0 }
         );
         }
-
     }, []);
 
     const text = useRef();
