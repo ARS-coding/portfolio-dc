@@ -1,5 +1,5 @@
 @import "../../style/variables";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
 .featured-project-section {
     position: relative;
@@ -28,8 +28,10 @@
                 }
 
                 p {
+                    font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
                     font-size: 22px;
                     line-height: 25px;
+                    margin-right: 90px;
                 }
             }
 
