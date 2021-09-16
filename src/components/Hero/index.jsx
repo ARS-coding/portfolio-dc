@@ -13,14 +13,21 @@ import "./index.scss";
 function Hero() {
     
     useEffect(() => {
-        const timeline = gsap.timeline();
-        timeline.from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" });
-        timeline.from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
-        
-        gsap.fromTo(".meet-text, .hand",
-            { duration: 1.5, y: -20, delay: 2.7 },
-            { duration: 1.2, opacity: 1, y: 0, delay: 2.7 }
+        if(window.innerWidth >= 992) {
+            const timeline = gsap.timeline();
+            timeline.from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" });
+            timeline.from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
+            
+            gsap.fromTo(".meet-text, .hand",
+                { duration: 1.5, y: -20, delay: 2.7 },
+                { duration: 1.2, opacity: 1, y: 0, delay: 2.7 }
+            );
+        } else {
+            gsap.fromTo(".meet-text, .hand",
+            { duration: 1.5, y: -20 },
+            { duration: 1.2, opacity: 1, y: 0 }
         );
+        }
 
     }, []);
 
