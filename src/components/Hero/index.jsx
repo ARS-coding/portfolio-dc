@@ -14,21 +14,24 @@ function Hero() {
     
     useEffect(() => {
         if(window.innerWidth >= 992) {
+            gsap.from(".hero-content-container", { duration: 1, opacity: .3, y: -20 })
+            
             const timeline = gsap.timeline();
             timeline
-            .from(".hero-content-container", { duration: 1, opacity: .3, y: -20 })
-            .from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo" })
+            .from(".square-animation-scale", { duration: 1.5, y: -30, x: -30, scale: 0, ease: "expo", delay: 1 })
             .from(".square-animation-up", { duration: 1.2, y: 50, opacity: 0, stagger: .1 });
             
             gsap.fromTo(".meet-text, .hand, .scroll-svg",
-                { duration: 1.5, y: -20, delay: 1.5 },
-                { duration: 1.2, opacity: 1, y: 0, delay: 1.5 }
+                { duration: 1.5, y: -20, delay: 2.5 },
+                { duration: 1.2, opacity: 1, y: 0, delay: 2.5 }
             );
         } 
         else {
-            gsap.fromTo(".meet-text, .hand",
-                { duration: 1.5, y: -20 },
-                { duration: 1.2, opacity: 1, y: 0 }
+            gsap.from(".hero-content-container", { duration: 1, opacity: .3, y: -20 })
+
+            gsap.fromTo(".meet-text, .hand, .scroll-svg",
+                { duration: 1.5, y: -20, delay: 1 },
+                { duration: 1.2, opacity: 1, y: 0, delay: 1 }
             );
         }
     }, []);
