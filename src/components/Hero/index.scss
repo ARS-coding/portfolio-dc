@@ -75,9 +75,15 @@
 
             svg {
                 display: block;
+                opacity: 0;
+                // animation: fadeAnimation 7s;
 
                 @media screen and (max-width: 413px) {
                     scale: 0.7;
+                }
+
+                circle.scroll-circle {
+                    animation: scrollAnimation 1.5s infinite alternate-reverse;
                 }
             }
         }
@@ -90,5 +96,24 @@
                 display: none;
             }
         }
+    }
+}
+
+@keyframes fadeAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollAnimation {
+    from {
+        transform: translate(262px, 798px)
+    }
+    
+    to {
+        transform: translate(262px, 830px)
     }
 }
