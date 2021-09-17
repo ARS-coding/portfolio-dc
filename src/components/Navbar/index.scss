@@ -21,11 +21,14 @@
                 & > nav {
                     a {
                         color: white !important;
-                        @media screen and  (max-width: $lg - 1px) {
-                            font-size: 12px;
-                        }
                         @media screen and (min-width: $lg) {
                             font-size: 15px;
+                        }
+                        @media screen and (min-width: 355px) and (max-width: $lg - 1px) {
+                            font-size: 12px;
+                        }
+                        @media screen and (max-width: 354px) {
+                            font-size: 10px;
                         }
                     }
                 }
