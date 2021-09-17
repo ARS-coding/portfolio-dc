@@ -35,7 +35,7 @@ function FeaturedProject() {
 
     return (
         <section className="featured-project-section container-fluid my-4 my-sm-4 my-md-4 my-lg-0">
-            <Container className="featured-project-content-container">
+            <Container className="featured-project-content-container px-0">
                 <Row className="featured-project-content-row d-flex justify-content-center align-items-center">
                     <Col className="column-left" xs={12} sm={12} md={12} lg={6}>
                         <span>Featured Project</span>
