@@ -14,7 +14,7 @@ import "./index.scss";
 function Skills() {
     return (
         <section className="skills-section container-fluid">
-            <Container className="skills-content-container">
+            <Container className="skills-content-container px-0">
                 <Row className="skills-content-row">
                     <SkillCard 
                         Image={ResponsiveIconSVG} 
