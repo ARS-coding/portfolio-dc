@@ -13,8 +13,8 @@ import "./index.scss";
 function NavBar() {
     return (
       <Navbar expand="xs" className="px-3 px-sm-0">
-        <Container>
-          <Container className="d-flex">
+        <Container className="px-0">
+          <Container className="d-flex px-0">
             <a href="#home">
               {window.innerWidth > 993 ? <FullName20 /> : <FullName16 />}
             </a>
