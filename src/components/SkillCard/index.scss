@@ -1,0 +1,27 @@
+.skill-card-column {
+    text-align: center;
+
+    .card {
+        height: 100%;
+
+        svg {
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div.card-title {
+                font-style: italic;
+            }
+
+            p.card-text {
+                font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
+            }
+        }
+    }
+}
