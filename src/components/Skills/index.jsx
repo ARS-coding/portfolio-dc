@@ -18,7 +18,7 @@ function Skills() {
                 <Row className="skills-content-row">
                     <SkillCard 
                         Image={ResponsiveIconSVG} 
-                        title="Responsive Design" 
+                        title="Responsiveness" 
                         text="Fluency in creating accessible and responsive websites with the help of most up to date technologies."
                     />
                     <SkillCard Image={JSIconSVG} 
