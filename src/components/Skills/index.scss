@@ -1,10 +1,22 @@
 @import "../../style/variables";
 
 .skills-section {
+    background-color: $pink;
+    bottom: 30px;
+    padding: 90px 0 !important;
+    @media screen and (min-width: $lg) {
+        position: relative;
+        bottom: 60px;
+    }
+
     .skills-content-container {
         .skills-content-row {
             & > div {
                 padding: 0 !important;
+            
+                .js-svg {
+                    border-radius: 3px;
+                }
             }
         }
     }
