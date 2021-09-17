@@ -16,7 +16,7 @@ function FeaturedProject() {
         gsap.from(".column-left",
             {  
                 x: -100,
-                duration: 2,
+                duration: 2.7,
                 scrollTrigger: {
                     trigger: ".featured-project-content-row", toggleActions: "play none none pause", start: "29% bottom" 
                 } 
@@ -28,7 +28,7 @@ function FeaturedProject() {
                     trigger: ".featured-project-content-row", toggleActions: "play none none pause", start: "29% bottom" 
                 }, 
                 x: 100,
-                duration: 2,
+                duration: 2.7, 
             }
         );
     }, []);
