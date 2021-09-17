@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import FeaturedProject from '../../components/FeaturedProject';
 import Skills from "../../components/Skills";
+import OtherProjects from "../../components/OtherProjects";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Hero />
             <FeaturedProject />          
             <Skills />
+            <OtherProjects />
         </Container>
     )
 }
