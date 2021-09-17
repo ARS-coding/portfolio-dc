@@ -6,8 +6,8 @@ import "./index.scss";
 
 function SkillCard({ Image, title, text }) {
     return (
-        <Col lg={3} className="skill-card-column">
-            <Card style={{ width: '18rem' }}>
+        <Col xs={12} sm={12} md={6} lg={3} className="skill-card-column">
+            <Card>
                 {<Image />}
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
