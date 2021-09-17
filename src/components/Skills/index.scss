@@ -3,11 +3,15 @@
 .skills-section {
     background-color: $pink;
     bottom: 30px;
-    padding: 90px 0 !important;
     
     @media screen and (min-width: $lg) {
+        padding-top: 90px;
         position: relative;
         bottom: 60px;
+    }
+    @media screen and (max-width: $lg - 1px) {
+        padding-top: 46px;
+        padding-bottom: 30px;
     }
 
     .skills-content-container {
