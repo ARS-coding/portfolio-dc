@@ -33,18 +33,6 @@
                     }
                 }
             }
-
-            & > a {
-                color: $light-blue;
-                font-weight: bold;
-
-                @media screen and (max-width: $sm - 1px) {
-                    margin: auto 0;
-                }
-                @media screen and (min-width: $lg) {
-                    font-size: 20px;
-                }
-            }
         }
 
         & > .social-header {
