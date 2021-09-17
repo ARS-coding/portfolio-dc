@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import { Container } from "react-bootstrap";
 
-import gsap from "gsap";
+import { gsap } from "gsap";
 
 import PointDownIMG from "../../images/point-down.png";
 import { ReactComponent as HeroShapesSVG } from "../../images/hero-shapes.svg";
