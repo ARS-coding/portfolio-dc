@@ -1,3 +1,5 @@
+@import "../../style/variables";
+
 .skill-card-column {
     text-align: center;
 
@@ -21,6 +23,10 @@
 
             p.card-text {
                 font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
+                
+                @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+                    font-size: 15px;
+                }
             }
         }
     }
