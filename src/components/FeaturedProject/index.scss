@@ -28,6 +28,10 @@
                     font-weight: bold;
                     color: $hero-purple;
                     letter-spacing: 3px;
+
+                    @media screen and (max-width: 330px) {
+                        font-size: 12px;
+                    }
                 }
 
                 a {
@@ -35,6 +39,10 @@
                     margin-bottom: 16px;
                     font-size: 30px;
                     color: black;
+
+                    @media screen and (max-width: 330px) {
+                        font-size: 25px;
+                    }
                 }
 
                 p {
