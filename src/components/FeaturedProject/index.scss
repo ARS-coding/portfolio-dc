@@ -29,7 +29,7 @@
                     color: $hero-purple;
                     letter-spacing: 3px;
 
-                    @media screen and (max-width: 330px) {
+                    @media screen and (max-width: 398px) {
                         font-size: 12px;
                     }
                 }
@@ -40,7 +40,7 @@
                     font-size: 30px;
                     color: black;
 
-                    @media screen and (max-width: 330px) {
+                    @media screen and (max-width: 398px) {
                         font-size: 25px;
                     }
                 }
@@ -59,7 +59,7 @@
                     @media screen and (max-width: $sm - 1px) {
                         margin: 0 20px 16px 20px;
                     }
-                    @media screen and (max-width: 378px) {
+                    @media screen and (max-width: 398px) {
                         font-size: 15px;
                     }
                 }
