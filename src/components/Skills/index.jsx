@@ -1,21 +1,40 @@
 import React from 'react'
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+
+import { ReactComponent as ResponsiveIconSVG } from "../../images/responsive-icon.svg";
+import { ReactComponent as JSIconSVG } from "../../images/JS-icon.svg";
+import { ReactComponent as ReactIcon } from "../../images/react-icon.svg";
+import { ReactComponent as ReduxIcon } from "../../images/redux-icon.svg";
+
+import SkillCard from "../SkillCard";
+
+import "./index.scss";
 
 function Skills() {
     return (
-        <section className="skills-section container fluid">
+        <section className="skills-section container-fluid">
             <Container className="skills-content-container">
                 <Row className="skills-content-row">
-                    <Col>
-                        <p>card one</p>
-                    </Col>
-                    <Col>
-                        <p>card two</p>
-                    </Col>
-                    <Col>
-                        <p>card three</p>
-                    </Col>
+                    <SkillCard 
+                        Image={ResponsiveIconSVG} 
+                        title="Responsive Design" 
+                        text="Fluency in creating accessible and responsive websites with the help of most up to date technologies."
+                    />
+                    <SkillCard Image={JSIconSVG} 
+                        title="JavaScript"
+                        text="A good grip of ES6, using external RESTful APIs, OOP, and JavaScript fundamentals by building projects."
+                    />
+                    <SkillCard 
+                        Image={ReactIcon}
+                        title="React"
+                        text="Hands-on practiced knowledge in separation of concerns, component oriented thinking, hooks and JSX."
+                    />
+                    <SkillCard 
+                        Image={ReduxIcon}
+                        title="Redux"
+                        text="Confident in managing and enhancing the data flow of an app by creating meaningful data structures."
+                    />
                 </Row>
             </Container>
         </section>
