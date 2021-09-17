@@ -1,0 +1,11 @@
+@import "../../style/variables";
+
+.other-project-section {
+    .other-project-content-container {
+        .other-project-content-row {
+            & > div {
+                padding: 0 !important;
+            }
+        }
+    }
+}
