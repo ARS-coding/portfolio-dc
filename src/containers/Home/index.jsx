@@ -9,7 +9,7 @@ import Skills from "../../components/Skills";
 
 function Home() {
     return (
-        <Container fluid>
+        <Container fluid className="p-0">
             <Navbar />
             <Hero />
             <FeaturedProject />          
