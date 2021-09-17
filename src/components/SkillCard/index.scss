@@ -1,0 +1,70 @@
+@import "../../style/variables";
+
+.skill-card-column {
+    text-align: center;
+    width: 1fr !important;
+
+    .card {
+        height: 255px;
+        border: none;
+        
+        @media screen and (min-width: $lg) {
+            border-radius: 8px 8px 0 0 !important;                
+        }
+        @media screen and (max-width: $lg - 1px) {
+            border-radius: 8px !important;
+        }
+
+        & > svg {
+            margin: 0 auto;
+            
+            @media screen and (min-width: $xl) and (max-width: 2000px) {
+                width: 70px;
+                height: 60px;
+            }
+            @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+                width: 60px;
+                height: 50px;
+            }
+            @media screen and (max-width: $lg - 1px) {
+                width: 70px;
+                height: 60px;
+            }
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div.card-title {
+                font-style: italic;
+                margin-bottom: 10px;
+
+                @media screen and (min-width: $xxl) {
+                    font-size: 26px;
+                }
+                @media screen and (min-width: $lg) and (max-width: $xxl - 1px) {
+                    font-size: 21px;
+                }
+                @media screen and (max-width: $lg - 1px) {
+                    font-size: 25px;
+                }
+            }
+
+            p.card-text {
+                font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
+
+                @media screen and (min-width: $xxl) and (max-width: 2000px) {
+                    font-size: 17px;
+                }
+                @media screen and (min-width: $xl) and (max-width: $xxl - 1px) {
+                    font-size: 15px;
+                }
+                @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+                    font-size: 14.6px;
+                }
+            }
+        }
+    }
+}

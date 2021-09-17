@@ -28,6 +28,10 @@
                     font-weight: bold;
                     color: $hero-purple;
                     letter-spacing: 3px;
+
+                    @media screen and (max-width: 398px) {
+                        font-size: 12px;
+                    }
                 }
 
                 a {
@@ -35,6 +39,10 @@
                     margin-bottom: 16px;
                     font-size: 30px;
                     color: black;
+
+                    @media screen and (max-width: 398px) {
+                        font-size: 25px;
+                    }
                 }
 
                 p {
@@ -51,7 +59,7 @@
                     @media screen and (max-width: $sm - 1px) {
                         margin: 0 20px 16px 20px;
                     }
-                    @media screen and (max-width: 378px) {
+                    @media screen and (max-width: 398px) {
                         font-size: 15px;
                     }
                 }
@@ -60,6 +68,7 @@
             div:last-child {
                 a {
                     display: inline-block;
+                    width: 100%;
                     
                     @media screen and (max-width: $lg - 1px) {
                         width: 67%;
@@ -69,6 +78,7 @@
                     }
 
                     img {
+                        width: 100%;
                         border-radius: 25px;
                         filter: brightness(80%);
                         max-height: 330px;

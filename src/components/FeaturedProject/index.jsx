@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -34,7 +34,7 @@ function FeaturedProject() {
     }, []);
 
     return (
-        <section className="featured-project-section container-fluid mt-4 mt-sm-4 mt-md-4 mt-lg-0">
+        <section className="featured-project-section container-fluid my-4 my-sm-4 my-md-4 my-lg-0">
             <Container className="featured-project-content-container">
                 <Row className="featured-project-content-row d-flex justify-content-center align-items-center">
                     <Col className="column-left" xs={12} sm={12} md={12} lg={6}>

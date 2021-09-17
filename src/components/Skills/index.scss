@@ -1,0 +1,29 @@
+@import "../../style/variables";
+
+.skills-section {
+    background-color: $pink;
+    bottom: 30px;
+    overflow-x: hidden;
+    
+    @media screen and (min-width: $lg) {
+        padding-top: 90px;
+        position: relative;
+        bottom: 60px;
+    }
+    @media screen and (max-width: $lg - 1px) {
+        padding-top: 46px;
+        padding-bottom: 30px;
+    }
+
+    .skills-content-container {
+        .skills-content-row {
+            & > div {
+                padding: 0 !important;
+            
+                .js-svg {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
