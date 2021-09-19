@@ -22,13 +22,9 @@
                 width: 70px;
                 height: 60px;
             }
-            @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+            @media screen and (max-width: $xl - 1px) {
                 width: 60px;
                 height: 50px;
-            }
-            @media screen and (max-width: $lg - 1px) {
-                width: 70px;
-                height: 60px;
             }
         }
 
