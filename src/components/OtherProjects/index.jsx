@@ -4,13 +4,34 @@ import { Container } from "react-bootstrap";
 
 import OtherProject from "../OtherProject";
 
+import MovieWebsiteIMG from "../../images/movie-app.jpg";
+
 import "./index.scss";
 
 function OtherProjects() {
     return (
         <section className="other-projects-section container-fluid px-0 mt-5 mt-sm-5 mt-md-5 mt-lg-0">
             <Container className="other-projects-content-container px-0">
-                <OtherProject />
+                <OtherProject 
+                    title="OOP TMDB Website"
+                    descriptionParagraph={
+                        <p className="me-0 me-sm-0 mw-md-0 me-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                            With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
+                        </p>
+                    }
+                    image={MovieWebsiteIMG}
+                    layout="normal"
+                />
+                <OtherProject 
+                    title="OOP TMDB Website"
+                    descriptionParagraph={
+                        <p className="me-0 me-sm-0 mw-md-0 me-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                            With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
+                        </p>
+                    }
+                    image={MovieWebsiteIMG}
+                    layout="reversed"
+                />
             </Container>
         </section>
     )
