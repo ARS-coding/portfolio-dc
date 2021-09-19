@@ -7,6 +7,7 @@ import Hero from "../../components/Hero";
 import FeaturedProject from '../../components/FeaturedProject';
 import Skills from "../../components/Skills";
 import OtherProjects from "../../components/OtherProjects";
+import GithubCalendar from "../../components/GithubCalendar";
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <FeaturedProject />          
             <Skills />
             <OtherProjects />
+            <GithubCalendar />
         </Container>
     )
 }
