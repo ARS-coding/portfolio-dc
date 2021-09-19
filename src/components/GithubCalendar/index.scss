@@ -22,8 +22,20 @@ text.ContributionCalendar-label {
     color: #6E00FF;
 }
 
-body {
+.github-calendar-section {
     .github-calendar-container * {
         border: none !important;
+    }
+
+    .contrib-column:nth-child(5) {
+        @media screen and (max-width: 467px) {
+            display: none !important; 
+        }
+    }
+
+    .contrib-column:nth-child(4) {
+        @media screen and (max-width: 349px) {
+            display: none !important; 
+        }
     }
 }
