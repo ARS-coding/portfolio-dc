@@ -1,0 +1,41 @@
+rect.ContributionCalendar-day[data-level="1"] {
+    fill: #6E00FF85;
+}
+
+rect.ContributionCalendar-day[data-level="2"] {
+    fill: #6E00FFB0;
+}
+
+rect.ContributionCalendar-day[data-level="3"] {
+    fill: #6E00FFD9;
+}
+
+rect.ContributionCalendar-day[data-level="4"] {
+    fill: #6E00FF;
+}
+
+text.ContributionCalendar-label {
+    fill: #FF64CBD4;
+}
+
+.contrib-number {
+    color: #6E00FF;
+}
+
+.github-calendar-section {
+    .github-calendar-container * {
+        border: none !important;
+    }
+
+    .contrib-column:nth-child(5) {
+        @media screen and (max-width: 467px) {
+            display: none !important; 
+        }
+    }
+
+    .contrib-column:nth-child(4) {
+        @media screen and (max-width: 349px) {
+            display: none !important; 
+        }
+    }
+}

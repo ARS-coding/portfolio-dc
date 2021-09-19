@@ -21,8 +21,8 @@ function NavBar() {
             
             <div className="ms-auto me-0 me-sm-3">
               <nav>
-                <a href="#my-work">My Work</a>
-                <a href="#my-skills" className="mx-2 mx-sm-3">My Skills</a>
+                <a href="#work">Work</a>
+                <a href="#skills" className="mx-2 mx-sm-3">Skills</a>
                 <a href="#hire-me">Hire Me</a>
               </nav>
             </div>
