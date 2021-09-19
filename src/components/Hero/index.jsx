@@ -38,7 +38,7 @@ function Hero() {
 
     return (
         <section className="hero-section container-fluid px-3 px-sm-0 d-flex">
-            <Container className="hero-content-container ms-lg-0 d-flex justify-content-center align-items-center">
+            <Container className="hero-content-container ms-lg-0 px-0 d-flex justify-content-center align-items-center">
                 <div className="text-center">
                     <h1 className="mx-auto"><span className="beautifully">Beautifully</span> Crafted<br/>Web Experiences</h1>
                     <div className="meet mx-auto">
