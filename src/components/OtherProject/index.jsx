@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import "./index.scss";
 
-function OtherProject({ title, descriptionParagraph, image, layout, index, link }) {
+function OtherProject({ title, descriptionParagraph, image, layout, index, link, projectType }) {
     
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -51,7 +51,7 @@ function OtherProject({ title, descriptionParagraph, image, layout, index, link 
             <Container className="other-project-content-container px-0">
                 <Row className="other-project-content-row d-flex align-items-center">
                     <Col xs={12} sm={12} md={12} lg={6} className={`${layout === "normal" ? `first-column-${index} order-lg-first pe-0 pe-sm-0 pe-md-0 pe-lg-5` : `last-column-${index} order-lg-last ps-0 ps-sm-0 ps-md-0 ps-lg-5`}`}>
-                        <span>Web App</span>
+                        <span>{projectType}</span>
                         <br />
                         <a href={link} target="_blank" rel="noreferrer">{title}</a>
                         {descriptionParagraph}
