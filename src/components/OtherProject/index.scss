@@ -4,7 +4,7 @@
     .other-project-content-container {
         .other-project-content-row {
             & > div {
-                padding: 0 !important;
+                padding: 0;
 
                 @media screen and (max-width: $lg - 1px) {
                     display: flex;
