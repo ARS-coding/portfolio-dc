@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import OtherProject from "../OtherProject";
 
 import MovieWebsiteIMG from "../../images/movie-app.jpg";
+import MMSWebsiteIMG from "../../images/mms-app.jpg";
 
 import "./index.scss";
 
@@ -22,17 +23,19 @@ function OtherProjects() {
                     image={MovieWebsiteIMG}
                     layout="normal"
                     index="0"
+                    link="https://oop-tmdb-movie-website.web.app/"
                 />
                 <OtherProject 
-                    title="OOP TMDB Website"
+                    title="MMS Website"
                     descriptionParagraph={
                         <p className="mb-4 mb-sm-4 mb-md-4 mb-lg-0">
-                            With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
+                            Using different JS libraries,&nbsp;<a href="https://www.linkedin.com/in/mohammad-al-alaya/" target="_blank" rel="noreferrer">Mohammad Al-Alaya</a> and me created Meal Management System to organise daily given tasks to employees of a branch. Try our drag-and-drop menu to assign tasks!
                         </p>
                     }
-                    image={MovieWebsiteIMG}
+                    image={MMSWebsiteIMG}
                     layout="reversed"
                     index="1"
+                    link="https://mms-project-2a291.web.app/"
                 />
             </Container>
         </section>

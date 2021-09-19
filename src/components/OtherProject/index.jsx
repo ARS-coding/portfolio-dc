@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import "./index.scss";
 
-function OtherProject({ title, descriptionParagraph, image, layout, index }) {
+function OtherProject({ title, descriptionParagraph, image, layout, index, link }) {
     
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -53,11 +53,11 @@ function OtherProject({ title, descriptionParagraph, image, layout, index }) {
                     <Col xs={12} sm={12} md={12} lg={6} className={`${layout === "normal" ? `first-column-${index} order-lg-first pe-0 pe-sm-0 pe-md-0 pe-lg-5` : `last-column-${index} order-lg-last ps-0 ps-sm-0 ps-md-0 ps-lg-5`}`}>
                         <span>Web App</span>
                         <br />
-                        <a href="https://oop-tmdb-movie-website.web.app/" target="_blank" rel="noreferrer">{title}</a>
+                        <a href={link} target="_blank" rel="noreferrer">{title}</a>
                         {descriptionParagraph}
                     </Col>
                     <Col xs={12} sm={12} md={12} lg={6} className={`column ${layout === "normal" ? `last-column-${index} order-lg-last` : `first-column-${index} order-lg-first`}`}>
-                        <a href="https://oop-tmdb-movie-website.web.app/" target="_blank" rel="noreferrer">
+                        <a href={link} target="_blank" rel="noreferrer">
                             <img src={image} className="img-fluid w-100 h-100" alt="movie website" /> 
                         </a>
                     </Col>
