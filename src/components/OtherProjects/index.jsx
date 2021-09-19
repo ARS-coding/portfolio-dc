@@ -15,22 +15,24 @@ function OtherProjects() {
                 <OtherProject 
                     title="OOP TMDB Website"
                     descriptionParagraph={
-                        <p className="me-0 me-sm-0 mw-md-0 me-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                        <p className="mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                             With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
                         </p>
                     }
                     image={MovieWebsiteIMG}
                     layout="normal"
+                    index="0"
                 />
                 <OtherProject 
                     title="OOP TMDB Website"
                     descriptionParagraph={
-                        <p className="me-0 me-sm-0 mw-md-0 me-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                        <p className="mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                             With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
                         </p>
                     }
                     image={MovieWebsiteIMG}
                     layout="reversed"
+                    index="1"
                 />
             </Container>
         </section>
