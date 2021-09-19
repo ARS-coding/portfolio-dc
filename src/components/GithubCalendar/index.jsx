@@ -47,7 +47,7 @@ function GithubCalendar() {
 
 
     return (
-        <section className="github-calendar-section container-fluid px-0 overflow-hidden">
+        <section className="github-calendar-section container-fluid px-0 overflow-hidden mt-4">
             <Container className="github-calendar-container px-0">
             </Container>
         </section>
