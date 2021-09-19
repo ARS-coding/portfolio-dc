@@ -8,7 +8,7 @@ import "./index.scss";
 
 function OtherProjects() {
     return (
-        <section className="other-projects-section container-fluid px-0">
+        <section className="other-projects-section container-fluid px-0 mt-5 mt-sm-5 mt-md-5 mt-lg-0">
             <Container className="other-projects-content-container px-0">
                 <OtherProject />
             </Container>
