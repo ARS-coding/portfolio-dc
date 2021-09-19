@@ -1,0 +1,23 @@
+@import "../../style/variables";
+
+.hire-me-section {
+    .hire-me-content-container {
+        .hire-me-content-row {
+            & > div {
+                padding: 0 !important;
+            }
+
+            & > div:first-child {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    max-height: 500px;
+                    width: 76%;
+                    // max-width: 300px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
