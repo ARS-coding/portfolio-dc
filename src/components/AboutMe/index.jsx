@@ -6,7 +6,7 @@ import MyPicture from "../../images/my-picture.jpg";
 
 import "./index.scss";
 
-function HireMe() {
+function AboutMe() {
     return (
         <section className="hire-me-section container-fluid px-0 mt-5">
             <Container className="hire-me-content-container px-0">
@@ -37,4 +37,4 @@ function HireMe() {
     )
 }
 
-export default HireMe
+export default AboutMe
