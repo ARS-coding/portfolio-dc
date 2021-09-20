@@ -8,6 +8,7 @@ import FeaturedProject from '../../components/FeaturedProject';
 import Skills from "../../components/Skills";
 import OtherProjects from "../../components/OtherProjects";
 import GithubCalendar from "../../components/GithubCalendar";
+import AboutMe from "../../components/AboutMe";
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
             <Skills />
             <OtherProjects />
             <GithubCalendar />
+            <AboutMe />
         </Container>
     )
 }
