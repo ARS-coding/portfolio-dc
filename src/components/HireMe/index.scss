@@ -8,14 +8,44 @@
             }
 
             & > div:first-child {
-                display: flex;
-                justify-content: center;
+                @media screen and (min-width: $lg) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media screen and (max-width: $lg - 1px) {
+                    display: none;
+                }
 
                 img {
-                    max-height: 500px;
-                    width: 76%;
-                    // max-width: 300px;
-                    margin: 0 auto;
+                    width: 85%;
+                    padding-top: 18px;
+                }
+            }
+
+            & > div:last-child {
+                span {
+                    color: #6E00FF;
+                    font-size: 20px;
+                    position: relative;
+                    top: 10px;
+                }
+
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
+                    margin-bottom: 0;
+
+                    strong {
+                        font-family: "Poppins", system-ui, sans-serif;
+                    }
+
+                    a {
+                        font-family: "Poppins", system-ui, sans-serif;
+                        color: #6E00FF;
+                    }
                 }
             }
         }
