@@ -8,7 +8,7 @@ import FeaturedProject from '../../components/FeaturedProject';
 import Skills from "../../components/Skills";
 import OtherProjects from "../../components/OtherProjects";
 import GithubCalendar from "../../components/GithubCalendar";
-import HireMe from "../../components/HireMe";
+import AboutMe from "../../components/AboutMe";
 
 function Home() {
     return (
@@ -19,7 +19,7 @@ function Home() {
             <Skills />
             <OtherProjects />
             <GithubCalendar />
-            <HireMe />
+            <AboutMe />
         </Container>
     )
 }
