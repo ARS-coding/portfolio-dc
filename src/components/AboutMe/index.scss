@@ -1,8 +1,10 @@
 @import "../../style/variables";
 
-.hire-me-section {
-    .hire-me-content-container {
-        .hire-me-content-row {
+.about-me-section {
+    overflow-y: hidden;
+
+    .about-me-content-container {
+        .about-me-content-row {
             & > div {
                 padding: 0 !important;
             }
@@ -19,6 +21,7 @@
                 img {
                     width: 85%;
                     padding-top: 18px;
+                    border-radius: 72px 0 72px 0;
                 }
             }
 
