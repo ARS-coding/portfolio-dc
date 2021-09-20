@@ -17,7 +17,7 @@ function AboutMe() {
         if (window.innerWidth >= 992) {
             gsap.from(".my-picture",
                 {
-                    duration: 2.3,
+                    duration: 1.8,
                     opacity: 0,
                     x: -110,
                     scrollTrigger: {
@@ -39,7 +39,7 @@ function AboutMe() {
                 }
             },
             {
-                duration: 1.5,
+                duration: 1.8,
                 opacity: 1,
                 y: 0,
                 scrollTrigger: {
@@ -52,7 +52,7 @@ function AboutMe() {
         gsap.from(".who-am-i",
             {
                 delay: 1.5,
-                duration: 3.5,
+                duration: 3,
                 opacity: 0,
                 x: 110,
                 scrollTrigger: {
