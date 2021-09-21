@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Alert } from "react-bootstrap";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
@@ -9,9 +9,13 @@ import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
 import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
 import { ReactComponent as Envelope } from "../../images/envelope.svg";
 
+import { send } from "emailjs-com";
+
 import "./index.scss";
 
 function HireMe() {
+
+    const [isEmailSentAlertOpen, setIsEmailSentAlertOpen] = useState(true);
 
     const initialFormValues = {
         firstName: "",
@@ -72,12 +76,16 @@ function HireMe() {
                                 }
                                 return errors;
                             }}
-                            onSubmit={(values, { setSubmitting, resetForm }) => {
+                            onSubmit={(values, { resetForm }) => {
                                 resetForm(initialFormValues);
-                                setTimeout(() => {
-                                  alert(JSON.stringify(values, null, 2));
-                                  setSubmitting(false);
-                                }, 400);
+                                
+                                const templateParams = {
+                                    from_full_name: `${values.firstName} ${values.lastName}`,
+                                    from_email: values.email,
+                                    subject: values.subject,
+                                    message: values.message
+                                };
+                                send("service_ssh5sd8", "template_r3votmc", templateParams);
                             }}
                         >
                             {({values}) => {
@@ -114,7 +122,14 @@ function HireMe() {
                                     </Form>
                                 );
                             }}
-                        </Formik>     
+                        </Formik>
+                        {(isEmailSentAlertOpen && window.innerWidth < 992) && (
+                            <Alert 
+                                variant="success"
+                                onClick={() => setIsEmailSentAlertOpen(false)} 
+                                dismissible 
+                            >Your email has been successfully sent!</Alert>
+                        )}
                     </Col>
                 </Row>
             </Container>
