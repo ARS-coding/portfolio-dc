@@ -24,9 +24,10 @@ function HireMe() {
     return (
         <section className="hire-me-section container-fluid px-0">
             <Container className="hire-me-content-container px-0">
+                <h1>Contact Me</h1>
+                
                 <Row className="hire-me-content-row">
-                    <h1>Contact Me</h1>
-                    <Col xs={12} sm={12} md={12} lg={6}>
+                    <Col xs={12} sm={12} md={12} lg={6} className="d-flex flex-lg-column justify-content-between align-items-center">
                         <GitHubSVG />
                         <LinkedInSVG />
                         <TwitterSVG />
