@@ -1,10 +1,76 @@
 @import "../../style/variables";
 
 .hire-me-section {
+    background-color: #6E00FF;
+    margin-top: 80px;
+    padding: 50px 0;
+
     .hire-me-content-container {
         .hire-me-content-row {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 55px;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+
             & > div {
                 padding: 0;
+            }
+
+            & > div:first-child {
+                svg {
+                    width: 50px;
+                    height: 50px;
+                    fill: white !important;
+                }
+            }
+
+            & > div:last-child {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    & > div {
+                        margin-bottom: 10px;
+
+                        span {
+                            color: $light-blue;
+                            margin-bottom: 5px;
+                            font-size: 18px;
+                        }
+
+                        input {
+                            height: 38px;
+                        }
+
+                        input, textarea {
+                            border: none;
+                            border-radius: 3px;
+                            width: 100%;
+                            padding: 7px 5px !important;
+                        }
+
+                        div {
+                            margin-top: 3px !important;
+                            color: $pink;
+                            font-size: 12px;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        padding: 12px;
+                        width: 40%;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        border-radius: 45px;
+                        color: $hero-purple;
+                        font-size: 20px;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
             }
         }
     }
