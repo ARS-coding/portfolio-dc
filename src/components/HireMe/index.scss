@@ -29,17 +29,20 @@
                 @media screen and (max-width: $lg - 1px) {
                     margin-top: 50px;
                 }
-                
-                a {
-                    svg {
-                        fill: white;
-                        width: 45px;
-                        height: 45px;
-                    }
+                & > div {
+                    height: 81%;
 
-                    &:first-child {
-                        @media screen and (min-width: $lg) {
-                            margin-top: 29px;
+                    a {
+                        svg {
+                            fill: white;
+                            width: 45px;
+                            height: 45px;
+                        }
+    
+                        &:first-child {
+                            @media screen and (min-width: $lg) {
+                                margin-top: 29px;
+                            }
                         }
                     }
                 }
