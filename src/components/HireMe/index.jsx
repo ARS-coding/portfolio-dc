@@ -22,26 +22,28 @@ function HireMe() {
     };
 
     return (
-        <section className="hire-me-section container-fluid px-0">
+        <section className="hire-me-section container-fluid px-3 px-sm-0">
             <Container className="hire-me-content-container px-0">
                 <h1>Contact Me</h1>
                 
                 <Row className="hire-me-content-row">
-                    <Col xs={12} sm={12} md={12} lg={6} className="d-flex flex-lg-column justify-content-between align-items-center">
-                        <a href="https://github.com/ARS-coding" target="_blank" rel="noreferrer">
-                            <GitHubSVG />
-                        </a>
-                        <a href="https://www.linkedin.com/in/ars-coding/" target="_blank" rel="noreferrer">
-                            <LinkedInSVG />
-                        </a>
-                        <a href="https://twitter.com/ARS_coding" target="_blank" rel="noreferrer">
-                            <TwitterSVG />
-                        </a>
-                        <a href="mailto:arsahin.dev@gmail.com" target="_blank" rel="noreferrer">
-                            <Envelope />
-                        </a>
-                    </Col>
                     <Col xs={12} sm={12} md={12} lg={6}>
+                        <div className="d-flex flex-lg-column justify-content-between align-items-center order-last order-lg-first">
+                            <a href="https://github.com/ARS-coding" target="_blank" rel="noreferrer">
+                                <GitHubSVG />
+                            </a>
+                            <a href="https://www.linkedin.com/in/ars-coding/" target="_blank" rel="noreferrer">
+                                <LinkedInSVG />
+                            </a>
+                            <a href="https://twitter.com/ARS_coding" target="_blank" rel="noreferrer">
+                                <TwitterSVG />
+                            </a>
+                            <a href="mailto:arsahin.dev@gmail.com" target="_blank" rel="noreferrer">
+                                <Envelope />
+                            </a>
+                        </div>
+                    </Col>
+                    <Col xs={12} sm={12} md={12} lg={6} className="order-first order-lg-last">
                         <Formik
                             initialValues={initialFormValues}
                             validate={values => {
@@ -81,7 +83,7 @@ function HireMe() {
                             {({values}) => {
                                 return (
                                     <Form>
-                                        <div className="first-last-name d-flex">
+                                        <div className="first-last-name d-flex flex-column flex-sm-row">
                                             <div className="me-2 w-100">
                                                 <span>First Name</span>
                                                 <Field type="text" name="firstName" value={values.firstName} />
