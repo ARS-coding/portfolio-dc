@@ -28,10 +28,18 @@ function HireMe() {
                 
                 <Row className="hire-me-content-row">
                     <Col xs={12} sm={12} md={12} lg={6} className="d-flex flex-lg-column justify-content-between align-items-center">
-                        <GitHubSVG />
-                        <LinkedInSVG />
-                        <TwitterSVG />
-                        <Envelope />
+                        <a href="https://github.com/ARS-coding" target="_blank" rel="noreferrer">
+                            <GitHubSVG />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ars-coding/" target="_blank" rel="noreferrer">
+                            <LinkedInSVG />
+                        </a>
+                        <a href="https://twitter.com/ARS_coding" target="_blank" rel="noreferrer">
+                            <TwitterSVG />
+                        </a>
+                        <a href="mailto:arsahin.dev@gmail.com" target="_blank" rel="noreferrer">
+                            <Envelope />
+                        </a>
                     </Col>
                     <Col xs={12} sm={12} md={12} lg={6}>
                         <Formik
