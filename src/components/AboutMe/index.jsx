@@ -22,7 +22,7 @@ function AboutMe() {
                     x: -110,
                     scrollTrigger: {
                         trigger: ".about-me-content-row",
-                        toggleActions: "restart none none pause",
+                        toggleActions: "play none none pause",
                         start: "35% bottom"
                     }
                 }
@@ -31,12 +31,7 @@ function AboutMe() {
         gsap.fromTo(".me-in-a-nutshell, .content-paragraph",
             {
                 opacity: 0,
-                y: 50,
-                scrollTrigger: {
-                    trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
-                    start: "35% bottom"
-                }
+                y: 50
             },
             {
                 duration: 1.8,
@@ -44,7 +39,7 @@ function AboutMe() {
                 y: 0,
                 scrollTrigger: {
                     trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
+                    toggleActions: "play none none none",
                     start: "35% bottom"
                 }
             }
@@ -57,7 +52,7 @@ function AboutMe() {
                 x: 110,
                 scrollTrigger: {
                     trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
+                    toggleActions: "play none none pause",
                     start: "35% bottom"
                 }
             }
