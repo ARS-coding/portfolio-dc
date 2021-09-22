@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Container, Row, Col, Alert } from "react-bootstrap";
 
@@ -17,6 +20,12 @@ function HireMe() {
 
     const [isEmailSuccessAlertOpen, setIsEmailSuccessAlertOpen] = useState(false);
 
+    useEffect(() => {
+        gsap.from(".contact-me", { duration: 2, opacity: 0 });
+        gsap.from(".input-header", { duration: 1.5, opacity: 0, x: 15 })
+        gsap.from(".social-icons", { duration: 1, opacity: 0, y: 15, stagger: .3 })
+    }, []);
+
     const initialFormValues = {
         firstName: "",
         lastName: "",
@@ -28,21 +37,21 @@ function HireMe() {
     return (
         <section className="hire-me-section container-fluid px-3 px-sm-0">
             <Container className="hire-me-content-container px-0">
-                <h1>Contact Me</h1>
+                <h1 className="contact-me">Contact Me</h1>
                 
                 <Row className="hire-me-content-row">
                     <Col xs={12} sm={12} md={12} lg={6}>
                         <div className="d-flex flex-lg-column justify-content-between align-items-center order-last order-lg-first">
-                            <a href="https://github.com/ARS-coding" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/ARS-coding" className="social-icons" target="_blank" rel="noreferrer">
                                 <GitHubSVG />
                             </a>
-                            <a href="https://www.linkedin.com/in/ars-coding/" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/ars-coding/" className="social-icons" target="_blank" rel="noreferrer">
                                 <LinkedInSVG />
                             </a>
-                            <a href="https://twitter.com/ARS_coding" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/ARS_coding" className="social-icons" target="_blank" rel="noreferrer">
                                 <TwitterSVG />
                             </a>
-                            <a href="mailto:arsahin.dev@gmail.com" target="_blank" rel="noreferrer">
+                            <a href="mailto:arsahin.dev@gmail.com" className="social-icons" target="_blank" rel="noreferrer">
                                 <Envelope />
                             </a>
                         </div>
@@ -94,28 +103,28 @@ function HireMe() {
                                     <Form>
                                         <div className="first-last-name d-flex flex-column flex-sm-row">
                                             <div className="me-2 w-100">
-                                                <span>First Name</span>
+                                                <span className="input-header">First Name</span>
                                                 <Field type="text" name="firstName" value={values.firstName} />
                                                 <ErrorMessage component="div" name="firstName" />
                                             </div>
                                             <div className="w-100">
-                                                <span>Last Name</span>
+                                                <span className="input-header">Last Name</span>
                                                 <Field type="text" name="lastName" value={values.lastName} />
                                                 <ErrorMessage component="div" name="lastName" />
                                             </div>
                                         </div>
                                         <div>
-                                            <span>Email</span>
+                                            <span className="input-header">Email</span>
                                             <Field type="email" name="email" value={values.email} />
                                             <ErrorMessage component="div" name="email" />
                                         </div>
                                         <div>
-                                            <span>Subject</span>
+                                            <span className="input-header">Subject</span>
                                             <Field type="text" name="subject" value={values.subject} />
                                             <ErrorMessage component="div" name="subject" />
                                         </div>
                                         <div>
-                                            <span>Message</span>
+                                            <span className="input-header">Message</span>
                                             <Field type="text" name="message" component="textarea" value={values.message} />
                                             <ErrorMessage component="div" name="message" />
                                         </div>
