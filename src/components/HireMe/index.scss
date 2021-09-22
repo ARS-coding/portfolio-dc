@@ -80,7 +80,7 @@
                         }
 
                         input, textarea {
-                            background-color: gainsboro;
+                            background-color: #dcdcdc;
                             border: none;
                             border-radius: 3px;
                             width: 100%;
@@ -102,7 +102,6 @@
                         border-radius: 45px;
                         color: $hero-purple;
                         font-size: 20px;
-                        transition: all ease-in-out 300ms;
                         
                         @media screen and (max-width: $sm - 1px) {
                             width: 100%;
