@@ -16,7 +16,7 @@ import { send } from "emailjs-com";
 
 import "./index.scss";
 
-function HireMe() {
+function ContactMe() {
 
     const [isEmailSuccessAlertOpen, setIsEmailSuccessAlertOpen] = useState(false);
 
@@ -186,4 +186,4 @@ function HireMe() {
     )
 }
 
-export default HireMe;
+export default ContactMe;
