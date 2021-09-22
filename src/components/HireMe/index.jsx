@@ -15,7 +15,7 @@ import "./index.scss";
 
 function HireMe() {
 
-    const [isEmailSentAlertOpen, setIsEmailSentAlertOpen] = useState(true);
+    const [isEmailSuccessAlertOpen, setIsEmailSuccessAlertOpen] = useState(false);
 
     const initialFormValues = {
         firstName: "",
@@ -85,7 +85,8 @@ function HireMe() {
                                     subject: values.subject,
                                     message: values.message
                                 };
-                                send("service_ssh5sd8", "template_r3votmc", templateParams);
+                                send("service_ssh5sd8", "template_r3votmc", templateParams)
+                                .then(() => setIsEmailSuccessAlertOpen(true))
                             }}
                         >
                             {({values}) => {
@@ -123,15 +124,23 @@ function HireMe() {
                                 );
                             }}
                         </Formik>
-                        {(isEmailSentAlertOpen && window.innerWidth < 992) && (
+                        {(isEmailSuccessAlertOpen && window.innerWidth < 992) && (
                             <Alert 
                                 variant="success"
-                                onClick={() => setIsEmailSentAlertOpen(false)} 
+                                onClick={() => setIsEmailSuccessAlertOpen(false)} 
                                 dismissible 
                             >Your email has been successfully sent!</Alert>
                         )}
                     </Col>
                 </Row>
+                
+                {(isEmailSuccessAlertOpen && window.innerWidth >= 992) && (
+                    <Alert 
+                        variant="success"
+                        onClose={() => setIsEmailSuccessAlertOpen(false)} 
+                        dismissible 
+                    >Your email has been successfully sent!</Alert>
+                )}
             </Container>
         </section>
     )
