@@ -21,9 +21,40 @@ function HireMe() {
     const [isEmailSuccessAlertOpen, setIsEmailSuccessAlertOpen] = useState(false);
 
     useEffect(() => {
-        gsap.from(".contact-me", { duration: 2, opacity: 0 });
-        gsap.from(".input-header", { duration: 1.5, opacity: 0, x: 15 })
-        gsap.from(".social-icons", { duration: 1, opacity: 0, y: 15, stagger: .3 })
+        gsap.registerPlugin(ScrollTrigger);
+        
+        gsap.from(".contact-me", {
+            duration: 2,
+            opacity: 0,
+            y: 20,
+            scrollTrigger: {
+                trigger: ".hire-me-content-container",
+                start: "20% bottom",
+                toggleActions: "play none none none"
+            }
+        });
+        gsap.from(".input-header", {
+            duration: .6,
+            opacity: 0,
+            x: 15,
+            stagger: .3,
+            scrollTrigger: {
+                trigger: ".hire-me-content-container",
+                start: "20% bottom",
+                toggleActions: "restart none none resume"
+            }
+        });
+        gsap.from(".social-icons", {
+            duration: 1,
+            opacity: 0,
+            y: 15,
+            stagger: .3,
+            scrollTrigger: {
+                trigger: ".hire-me-content-container",
+                start: "top bottom",
+                toggleActions: "restart none none resume"
+            }
+        })
     }, []);
 
     const initialFormValues = {
