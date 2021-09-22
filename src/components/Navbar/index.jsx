@@ -23,7 +23,7 @@ function NavBar() {
               <nav>
                 <a href="#work">Work</a>
                 <a href="#skills" className="mx-2 mx-sm-3">Skills</a>
-                <a href="#hire-me">Hire Me</a>
+                <a href="#contact-me">Contact Me</a>
               </nav>
             </div>
           </Container>
