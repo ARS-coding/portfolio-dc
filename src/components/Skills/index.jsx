@@ -57,7 +57,7 @@ function Skills() {
     }, [])
 
     return (
-        <section className="skills-section container-fluid px-0">
+        <section id="skills" className="skills-section container-fluid px-0">
             <Container className="skills-content-container px-0">
                 <Row className="skills-content-row">
                     <SkillCard 

@@ -29,6 +29,8 @@
                 & > nav {
                     a {
                         color: white !important;
+                        display: inline-block;
+
                         @media screen and (min-width: $lg) {
                             font-size: 15px;
                         }

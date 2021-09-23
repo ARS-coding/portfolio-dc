@@ -1,0 +1,127 @@
+@import "../../style/variables";
+
+.hire-me-section {
+    background-color: #6E00FF;
+    margin-top: 80px;
+    padding: 50px 0;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../images/hire-me-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hire-me-content-container {
+        position: relative;
+
+        h1 {
+            color: #ededed;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 359px) {
+                font-size: 50px;
+            }
+            @media screen and (min-width: 360px) {
+                font-size: 55px;
+            }
+        }
+
+        .hire-me-content-row {
+            & > div {
+                padding: 0;
+            }
+
+            & > div:first-child {
+                @media screen and (max-width: $lg - 1px) {
+                    margin-top: 50px;
+                }
+                & > div {
+                    @media screen and (min-width: $lg) {
+                        height: 81%;
+                    }
+                    @media screen and (max-width: $lg - 1px) {
+                        height: 100%;
+                    }
+
+                    a {
+                        svg {
+                            fill: white;
+                            width: 45px;
+                            height: 45px;
+                        }
+    
+                        &:first-child {
+                            @media screen and (min-width: $lg) {
+                                margin-top: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > div:last-child {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    & > div {
+                        margin-bottom: 10px;
+
+                        span {
+                            color: $light-blue;
+                            margin-bottom: 5px;
+                            font-size: 18px;
+                            display: inline-block;
+                        }
+
+                        input {
+                            height: 38px;
+                        }
+
+                        input, textarea {
+                            background-color: #dcdcdc;
+                            border: none;
+                            border-radius: 3px;
+                            width: 100%;
+                            padding: 7px 5px !important;
+                        }
+
+                        div {
+                            margin-top: 3px !important;
+                            color: $pink;
+                            font-size: 12px;
+                        }
+                    }
+
+                    & > button {
+                        border: none;
+                        padding: 12px;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        border-radius: 45px;
+                        color: $hero-purple;
+                        font-size: 20px;
+                        
+                        @media screen and (max-width: $sm - 1px) {
+                            width: 100%;
+                        }
+                        @media screen and (min-width: $sm) {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .alert {
+            margin-top: 35px;
+
+            @media screen and (min-width: $lg) {
+                width: 50%;
+                margin-left: auto;
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ import LTNMockupImage from "../../images/LTN-mockup-image.jpg"
 
 import "./index.scss";
 
-function FeaturedProject() {
+function TeamProject() {
     
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -34,11 +34,11 @@ function FeaturedProject() {
     }, []);
 
     return (
-        <section className="featured-project-section container-fluid my-4 my-sm-4 my-md-4 my-lg-0 px-0">
+        <section id="work" className="featured-project-section container-fluid my-4 my-sm-4 my-md-4 my-lg-0 px-0">
             <Container className="featured-project-content-container px-0">
                 <Row className="featured-project-content-row d-flex justify-content-center align-items-center">
                     <Col className="column-left" xs={12} sm={12} md={12} lg={6}>
-                        <span>Featured Project</span>
+                        <span>Team Project</span>
                         <br/>
                         <a href="https://lovethyneighbor.netlify.app/" target="_blank" rel="noreferrer">Love Thy Neighbor</a>
                         <p className="text-center text-sm-center text-md-center text-lg-start"><span>Love Thy Neighbor</span> helps people to find neighbors nearby and invite them to an event so they could build a dynamic community that uplifts each other.</p>
@@ -54,4 +54,4 @@ function FeaturedProject() {
     )
 }
 
-export default FeaturedProject
+export default TeamProject;

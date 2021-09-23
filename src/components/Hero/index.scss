@@ -11,7 +11,6 @@
     .hero-content-container {
         position: relative;
 
-
         @media screen and (max-width: $lg - 1px) {
             max-width: unset;
             margin: 0;
@@ -76,7 +75,6 @@
             svg {
                 display: block;
                 opacity: 0;
-                // animation: fadeAnimation 7s;
 
                 @media screen and (max-width: 413px) {
                     scale: 0.7;

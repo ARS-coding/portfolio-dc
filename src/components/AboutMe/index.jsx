@@ -17,12 +17,12 @@ function AboutMe() {
         if (window.innerWidth >= 992) {
             gsap.from(".my-picture",
                 {
-                    duration: 2.3,
+                    duration: 1.8,
                     opacity: 0,
                     x: -110,
                     scrollTrigger: {
                         trigger: ".about-me-content-row",
-                        toggleActions: "restart none none pause",
+                        toggleActions: "play none none pause",
                         start: "35% bottom"
                     }
                 }
@@ -31,20 +31,15 @@ function AboutMe() {
         gsap.fromTo(".me-in-a-nutshell, .content-paragraph",
             {
                 opacity: 0,
-                y: 50,
-                scrollTrigger: {
-                    trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
-                    start: "35% bottom"
-                }
+                y: 50
             },
             {
-                duration: 1.5,
+                duration: 1.8,
                 opacity: 1,
                 y: 0,
                 scrollTrigger: {
                     trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
+                    toggleActions: "play none none none",
                     start: "35% bottom"
                 }
             }
@@ -52,12 +47,12 @@ function AboutMe() {
         gsap.from(".who-am-i",
             {
                 delay: 1.5,
-                duration: 3.5,
+                duration: 3,
                 opacity: 0,
                 x: 110,
                 scrollTrigger: {
                     trigger: ".about-me-content-row",
-                    toggleActions: "restart none none pause",
+                    toggleActions: "play none none pause",
                     start: "35% bottom"
                 }
             }

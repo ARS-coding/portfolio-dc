@@ -23,7 +23,7 @@ function GithubCalendar() {
                     opacity: 0,
                     scrollTrigger: {
                         trigger: ".graph-before-activity-overview",
-                        toggleActions: "restart none none pause",
+                        toggleActions: "play none none pause",
                         start: "30% bottom"
                     }
                 }
