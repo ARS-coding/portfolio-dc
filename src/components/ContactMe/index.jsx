@@ -66,7 +66,7 @@ function ContactMe() {
     };
 
     return (
-        <section className="hire-me-section container-fluid px-3 px-sm-0">
+        <section id="contact-me" className="hire-me-section container-fluid px-3 px-sm-0">
             <Container className="hire-me-content-container px-0">
                 <h1 className="contact-me">Contact Me</h1>
                 
