@@ -72,14 +72,21 @@ function AboutMe() {
               make the web better and more accessible place with the help of
               most recent technologies.
               <br />
-              <br />I graduated from High School in June 2020 and coundn't get
+              <br />I graduated from high school in June 2020 and coundn't get
               into the university that I wanted. I had the idea of preparing for
               it again but then I stumbled upon an ad of Re:Coded. I can
               honestly say that, one ad literally changed my life. I applied for
-              the Front End Web Development bootcamp of Re:Coded and got
-              selected although the <strong>7% selection rate</strong> and
-              stopped preparing for the university. I completed this 5 months of
-              bootcamp with <strong>43 classes</strong>,{" "}
+              the Front End Web Development bootcamp of{" "}
+              <a
+                href="https://www.re-coded.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Re:Coded
+              </a>{" "}
+              and got selected although the <strong>7% selection rate</strong>{" "}
+              and stopped preparing for the university. I completed this 5
+              months of bootcamp with <strong>43 classes</strong>,{" "}
               <strong>237 assignments</strong> that I have submitted and{" "}
               <strong>1100 contributions</strong> that I have done on{" "}
               <a
