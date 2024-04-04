@@ -19,7 +19,7 @@ function Home() {
             <TeamProject />          
             <Skills />
             <OtherProjects />
-            <GithubCalendar />
+            {/* <GithubCalendar /> */}
             <AboutMe />
             <ContactMe />
         </Container>
