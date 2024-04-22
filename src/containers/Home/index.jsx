@@ -7,7 +7,7 @@ import Hero from "../../components/Hero";
 import TeamProject from '../../components/TeamProject';
 import Skills from "../../components/Skills";
 import OtherProjects from "../../components/OtherProjects";
-import GithubCalendar from "../../components/GithubCalendar";
+// import GithubCalendar from "../../components/GithubCalendar";
 import AboutMe from "../../components/AboutMe";
 import ContactMe from "../../components/ContactMe";
 
