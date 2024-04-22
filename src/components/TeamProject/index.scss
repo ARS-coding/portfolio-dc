@@ -14,7 +14,7 @@
             & > div {
                 padding: 0;
                 
-                @media screen and (max-width: $lg - 1px) {
+                @media screen and (max-width: $lg-1px) {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -52,10 +52,10 @@
                     @media screen and (min-width: $lg) {
                         margin-right: 90px;
                     }
-                    @media screen and (min-width: $sm) and (max-width: $lg - 1px) {
+                    @media screen and (min-width: $sm) and (max-width: $lg-1px) {
                         width: 67%;
                     }
-                    @media screen and (max-width: $sm - 1px) {
+                    @media screen and (max-width: $sm-1px) {
                         margin: 0 20px 16px 20px;
                     }
                     @media screen and (max-width: 398px) {
@@ -69,10 +69,10 @@
                     display: inline-block;
                     width: 100%;
                     
-                    @media screen and (max-width: $lg - 1px) {
+                    @media screen and (max-width: $lg-1px) {
                         width: 67%;
                     }
-                    @media screen and (max-width: $sm - 1px) {
+                    @media screen and (max-width: $sm-1px) {
                         width: 80%;
                     }
 
