@@ -11,7 +11,7 @@
         @media screen and (min-width: $lg) {
             border-radius: 8px 8px 0 0 !important;                
         }
-        @media screen and (max-width: $lg-1px) {
+        @media screen and (max-width: $lg - 1px) {
             border-radius: 8px !important;
         }
 
@@ -22,7 +22,7 @@
                 width: 70px;
                 height: 60px;
             }
-            @media screen and (max-width: $xl-1px) {
+            @media screen and (max-width: $xl - 1px) {
                 width: 60px;
                 height: 50px;
             }
@@ -40,10 +40,10 @@
                 @media screen and (min-width: $xxl) {
                     font-size: 26px;
                 }
-                @media screen and (min-width: $lg) and (max-width: $xxl-1px) {
+                @media screen and (min-width: $lg) and (max-width: $xxl - 1px) {
                     font-size: 21px;
                 }
-                @media screen and (max-width: $lg-1px) {
+                @media screen and (max-width: $lg - 1px) {
                     font-size: 25px;
                 }
             }
@@ -54,10 +54,10 @@
                 @media screen and (min-width: $xxl) and (max-width: 2000px) {
                     font-size: 17px;
                 }
-                @media screen and (min-width: $xl) and (max-width: $xxl-1px) {
+                @media screen and (min-width: $xl) and (max-width: $xxl - 1px) {
                     font-size: 14px;
                 }
-                @media screen and (min-width: $lg) and (max-width: $xl-1px) {
+                @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
                     font-size: 13.6px;
                 }
             }

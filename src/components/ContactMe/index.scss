@@ -34,14 +34,14 @@
             }
 
             & > div:first-child {
-                @media screen and (max-width: $lg-1px) {
+                @media screen and (max-width: $lg - 1px) {
                     margin-top: 50px;
                 }
                 & > div {
                     @media screen and (min-width: $lg) {
                         height: 81%;
                     }
-                    @media screen and (max-width: $lg-1px) {
+                    @media screen and (max-width: $lg - 1px) {
                         height: 100%;
                     }
 
@@ -104,7 +104,7 @@
                         color: $hero-purple;
                         font-size: 20px;
                         
-                        @media screen and (max-width: $sm-1px) {
+                        @media screen and (max-width: $sm - 1px) {
                             width: 100%;
                         }
                         @media screen and (min-width: $sm) {
