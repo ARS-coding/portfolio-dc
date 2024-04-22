@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-
-import { init } from "emailjs-com";
+import { init } from "@emailjs/browser";
 
 import Home from "./containers/Home";
 

@@ -12,7 +12,7 @@ import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
 import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
 import { ReactComponent as Envelope } from "../../images/envelope.svg";
 
-import { send } from "emailjs-com";
+import { send } from "@emailjs/browser";
 
 import "./index.scss";
 

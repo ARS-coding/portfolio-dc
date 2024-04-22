@@ -4,8 +4,8 @@
   "private": true,
   "packageManager": "yarn@1.22.21",
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "bootstrap": "^5.1.1",
-    "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "github-calendar": "^2.2.7",
     "gsap": "^3.7.1",
