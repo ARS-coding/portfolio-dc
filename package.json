@@ -9,6 +9,7 @@
     "formik": "^2.2.9",
     "github-calendar": "^2.2.7",
     "gsap": "^3.7.1",
+    "next": "^14.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^18.2.0",
@@ -21,6 +22,7 @@
     "@testing-library/user-event": "^14.1.1"
   },
   "scripts": {
+    "dev": "next dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
