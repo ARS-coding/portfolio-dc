@@ -27,9 +27,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-      </head>
       <body>
         <div id="root">{children}</div>
       </body>
