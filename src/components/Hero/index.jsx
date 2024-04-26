@@ -4,9 +4,8 @@ import { Container } from "react-bootstrap";
 
 import { gsap } from "gsap";
 
-import PointDownIMG from "../../images/point-down.png";
-import { ReactComponent as HeroShapesSVG } from "../../images/hero-shapes.svg";
-import { ReactComponent as ScrollIconSVG } from "../../images/scroll-icon.svg";
+import HeroShapesSVG from "../../images/hero-shapes.svg";
+import ScrollIconSVG from "../../images/scroll-icon.svg";
 
 import "./index.scss";
 
@@ -42,7 +41,7 @@ function Hero() {
                 <div className="text-center">
                     <h1 className="mx-auto"><span className="beautifully">Beautifully</span> Crafted<br/>Web Experiences</h1>
                     <div className="meet mx-auto">
-                        <img src={PointDownIMG} className="hand" alt="A hand pointing down" />
+                        <img src="/point-down.png" className="hand" alt="A hand pointing down" />
                         <p className="meet-text"><span>Meet</span> Ali Rıza Şahin</p>
                     </div>
                     <ScrollIconSVG className="scroll-svg mx-auto" />

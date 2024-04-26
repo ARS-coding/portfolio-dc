@@ -4,11 +4,11 @@ import { gsap } from "gsap";
 
 import { Container, Navbar } from "react-bootstrap";
 
-import { ReactComponent as GitHubSVG } from "../../images/github.svg";
-import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
-import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
-import { ReactComponent as FullName16 } from "../../images/full-name-16.svg";
-import { ReactComponent as FullName20 } from "../../images/full-name-20.svg";
+import GitHubSVG from "../../images/github.svg";
+import LinkedInSVG from "../../images/linkedin.svg";
+import TwitterSVG from "../../images/twitter.svg";
+import FullName16 from "../../images/full-name-16.svg";
+import FullName20 from "../../images/full-name-20.svg";
 
 import "./index.scss";
 

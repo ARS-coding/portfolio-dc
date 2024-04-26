@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Container, Row } from "react-bootstrap";
 
-import { ReactComponent as ResponsiveIconSVG } from "../../images/responsive-icon.svg";
-import { ReactComponent as JSIconSVG } from "../../images/JS-icon.svg";
-import { ReactComponent as ReactIcon } from "../../images/react-icon.svg";
-import { ReactComponent as ReduxIcon } from "../../images/redux-icon.svg";
+import ResponsiveIconSVG from "../../images/responsive-icon.svg";
+import JSIconSVG from "../../images/JS-icon.svg";
+import ReactIcon from "../../images/react-icon.svg";
+import ReduxIcon from "../../images/redux-icon.svg";
 
 import SkillCard from "../SkillCard";
 

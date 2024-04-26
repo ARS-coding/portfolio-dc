@@ -3,11 +3,13 @@ import { init } from "@emailjs/browser";
 
 import Home from "./containers/Home";
 
-import "./main.scss";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "./main.css";
 
-function App() {
+export default function App() {
 
   useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
     init("user_ncL4KB6QtdpEjNWiPhlWR");
   }, []);
 
@@ -17,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

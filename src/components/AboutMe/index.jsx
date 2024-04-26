@@ -5,8 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import MyPicture from "../../images/my-picture.jpg";
-
 import "./index.scss";
 
 function AboutMe() {
@@ -60,7 +58,7 @@ function AboutMe() {
       <Container className="about-me-content-container px-0">
         <Row className="about-me-content-row">
           <Col xs={12} sm={12} md={12} lg={6}>
-            <img src={MyPicture} className="img-fluid my-picture" alt="me" />
+            <img src="/my-picture.jpg" className="img-fluid my-picture" alt="me" />
           </Col>
           <Col xs={12} sm={12} md={12} lg={6}>
             <span className="who-am-i">Who Am I ?!</span>

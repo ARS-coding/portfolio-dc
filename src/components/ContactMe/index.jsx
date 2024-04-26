@@ -7,10 +7,10 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-import { ReactComponent as GitHubSVG } from "../../images/github.svg";
-import { ReactComponent as LinkedInSVG } from "../../images/linkedin.svg";
-import { ReactComponent as TwitterSVG } from "../../images/twitter.svg";
-import { ReactComponent as Envelope } from "../../images/envelope.svg";
+import GitHubSVG from "../../images/github.svg";
+import LinkedInSVG from "../../images/linkedin.svg";
+import TwitterSVG from "../../images/twitter.svg";
+import Envelope from "../../images/envelope.svg";
 
 import { send } from "@emailjs/browser";
 

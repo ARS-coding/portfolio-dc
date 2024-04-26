@@ -4,10 +4,6 @@ import { Container } from "react-bootstrap";
 
 import OtherProject from "../OtherProject";
 
-import MovieWebsiteIMG from "../../images/movie-app.jpg";
-import MMSWebsiteIMG from "../../images/mms-app.jpg";
-import MadlibsIMG from "../../images/madlibs.jpg";
-
 function OtherProjects() {
     return (
         <section className="other-projects-section container-fluid overflow-hidden px-0 mt-5 mt-sm-5 mt-md-5 mt-lg-0">
@@ -19,7 +15,7 @@ function OtherProjects() {
                             With the help of the TMDB API,&nbsp;<a href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/" target="_blank" rel="noreferrer">Ufuk Deniz Demirbilek</a> and me created this website with OOP principles. Website presents detailed data about large amount of movies in a user friendly manner.
                         </p>
                     }
-                    image={MovieWebsiteIMG}
+                    imagePath="/movie-app.jpg"
                     layout="normal"
                     index="0"
                     link="https://oop-tmdb-movie-website.web.app/"
@@ -32,7 +28,7 @@ function OtherProjects() {
                             Using different JS libraries,&nbsp;<a href="https://www.linkedin.com/in/mohammad-al-alaya/" target="_blank" rel="noreferrer">Mohammad Al-Alaya</a> and me created Meal Management System to organise daily given tasks to employees of a branch. Try our drag-and-drop menu to assign tasks!
                         </p>
                     }
-                    image={MMSWebsiteIMG}
+                    imagePath="/mms-app.jpg"
                     layout="reversed"
                     index="1"
                     link="https://mms-project-2a291.web.app/"
@@ -45,7 +41,7 @@ function OtherProjects() {
                             Using just pure JavaScript,&nbsp;<a href="https://www.linkedin.com/in/h-nur-bacaks%C4%B1z-b352b2182/" target="_blank" rel="noreferrer">Hafise Nur Bacaksiz</a> and me created this single page web application. Check out our Spanish themed, madlibs game!
                         </p>
                     }
-                    image={MadlibsIMG}
+                    imagePath="/madlibs.jpg"
                     layout="normal"
                     index="1"
                     link="https://madlibs-50a45.web.app/"

@@ -5,8 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import LTNMockupImage from "../../images/LTN-mockup-image.jpg"
-
 import "./index.scss";
 
 function TeamProject() {
@@ -45,7 +43,7 @@ function TeamProject() {
                     </Col>
                     <Col className="column-right" xs={12} sm={12} md={12} lg={6}>
                         <a href="https://lovethyneighbor.netlify.app/" target="_blank" rel="noreferrer">
-                            <img src={LTNMockupImage} className="img-fluid" alt="Love Thy Neighbor mockup" />
+                            <img src="/LTN-mockup-image.jpg" className="img-fluid" alt="Love Thy Neighbor mockup" />
                         </a>
                     </Col>
                 </Row>
