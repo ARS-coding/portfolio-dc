@@ -1,0 +1,68 @@
+@import "../../style/variables";
+
+.navbar {
+    background-color: $navbar-purple;
+    padding: 0 !important;
+    height: 84px;
+    
+    & > .container {
+        & > .container {
+            padding: 27px 0 !important;
+            margin: 0;
+
+            @media screen and (min-width: $lg) {
+                width: 66%;
+            }
+            @media screen and (max-width: $lg - 1px) {
+                width: 100%;
+            }
+
+            & > a {
+                svg {
+                    @media screen and (max-width: 354px) {
+                        width: 100px;
+                    }
+                }
+            }
+
+            & > div {
+                & > nav {
+                    a {
+                        color: white !important;
+                        display: inline-block;
+
+                        @media screen and (min-width: $lg) {
+                            font-size: 15px;
+                        }
+                        @media screen and (min-width: 355px) and (max-width: $lg - 1px) {
+                            font-size: 12px;
+                        }
+                        @media screen and (max-width: 354px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .social-header {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 34%;
+            background-color: white;
+    
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: black;
+            }
+    
+            & > div {
+                margin: auto 0;
+            }
+        }
+    
+    }
+}

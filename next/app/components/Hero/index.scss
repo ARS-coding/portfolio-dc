@@ -1,0 +1,117 @@
+@import "../../style/variables";
+
+.hero-section {
+    color: white;
+    height: calc(100vh - 24px);
+    
+    @media screen and (max-width: $lg - 1px) {
+        background-color: $hero-purple;
+    }    
+    
+    .hero-content-container {
+        position: relative;
+
+        @media screen and (max-width: $lg - 1px) {
+            max-width: unset;
+            margin: 0;
+        }        
+        @media screen and (min-width: $lg) {
+            background-color: $hero-purple;
+            width: 66%;
+        }
+
+        & > div {
+            & > h1 {
+                font-weight: bold;
+
+                @media screen and (min-width: 414px) and (max-width: $sm - 1px) {
+                    font-size: 40px;
+                }
+                @media screen and (min-width: $sm) and (max-width: $md - 1px) {
+                    font-size: 57.5px;
+                }
+                @media screen and (min-width: $md) and (max-width: $lg - 1px) {
+                    font-size: 60px;
+                }
+                @media screen and (min-width: $lg) and (max-width: $xl - 1px) {
+                    font-size: 45px;
+                }
+                @media screen and (min-width: $xl) {
+                    font-size: 55px;
+                }
+
+                span {
+                    @media screen and (min-width: $lg) {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            & > div.meet {
+                margin: 20px 0;
+                display: inline-block;
+                position: relative;
+                left: 23px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 4px;
+                    left: -24px;
+                    opacity: 0;
+                }
+
+                p {
+                    margin-right: 30px;
+                    opacity: 0;
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            svg {
+                display: block;
+                opacity: 0;
+
+                @media screen and (max-width: 413px) {
+                    scale: 0.7;
+                }
+
+                circle.scroll-circle {
+                    animation: scrollAnimation 1.5s infinite alternate-reverse;
+                }
+            }
+        }
+
+        & > svg {
+            position: absolute;
+            right: -200px;
+            
+            @media screen and (max-width: $lg - 1px) {
+                display: none;
+            }
+        }
+    }
+}
+
+@keyframes fadeAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollAnimation {
+    from {
+        transform: translate(262px, 798px)
+    }
+    
+    to {
+        transform: translate(262px, 830px)
+    }
+}

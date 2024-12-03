@@ -9,7 +9,7 @@ import MyPicture from "../../images/my-picture-1.jpg";
 
 import "./index.scss";
 
-function AboutMe() {
+export function AboutMe() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -94,5 +94,3 @@ function AboutMe() {
     </section>
   );
 }
-
-export default AboutMe;

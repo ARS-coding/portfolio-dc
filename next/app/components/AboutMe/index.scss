@@ -1,0 +1,71 @@
+@import "../../style/variables";
+
+.about-me-section {
+    overflow-y: hidden;
+
+    .about-me-content-container {
+        .about-me-content-row {
+            & > div {
+                padding: 0 !important;
+            }
+
+            & > div:first-child {
+                @media screen and (min-width: $lg) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media screen and (max-width: $lg - 1px) {
+                    display: none;
+                }
+
+                img {
+                    width: 85%;
+                    padding-top: 18px;
+                    border-radius: 72px 0 72px 0;
+                }
+            }
+
+            & > div:last-child {
+                span {
+                    color: #6E00FF;
+                    position: relative;
+                    
+                    @media screen and (min-width: $sm) {
+                        top: 10px;
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: $sm - 1px) {
+                        top: 7px;
+                        font-size: 15px;
+                    }
+                }
+
+                h1 {
+                    @media screen and (min-width: $sm) {
+                        font-size: 50px;
+                    }
+                    @media screen and (min-width: 428px) and (max-width: $sm - 1px) {
+                        font-size: 45px;
+                    }
+                    @media screen and (min-width: 340px) and (max-width: 427px) {
+                        font-size: 35px;
+                    }
+                }
+
+                p {
+                    font-family: "Hind Siliguri", "sysytem-ui", "sans-serif";
+                    margin-bottom: 0;
+
+                    strong {
+                        font-family: "Poppins", system-ui, sans-serif;
+                    }
+
+                    a {
+                        font-family: "Poppins", system-ui, sans-serif;
+                        color: #6E00FF;
+                    }
+                }
+            }
+        }
+    }
+}
